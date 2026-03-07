@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LibraryFlow.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a46b3803f1bfc27d8715d0040a64246c7987356f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f06ceeacbc34d941264724b868068b3a1326a3f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("LibraryFlow.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LibraryFlow.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
