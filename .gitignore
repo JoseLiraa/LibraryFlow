@@ -1,0 +1,36 @@
+# Visual Studio
+.vs/
+.vsconfig
+*.user
+*.suo
+
+# Build results
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+**/bin/
+**/obj/
+
+# User-specific files
+*.csproj.user
+
+# Config files (opcional - si tienes secrets locales)
+appsettings.Development.json
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temp files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Logs
+logs/
+*.log
+*.data
+*.trace
+loglevel
