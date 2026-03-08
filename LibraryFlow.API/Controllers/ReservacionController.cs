@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace LibraryFlow.API.Controllers
 {
     [ApiController]
-    [Route("api/reservationes")]
+    [Route("api/reservations")]
     public class ReservacionController : ControllerBase
     {
         private readonly ReservacionService _reservacionService;
@@ -13,6 +13,20 @@ namespace LibraryFlow.API.Controllers
         public ReservacionController(ReservacionService reservacionService)
         {
             _reservacionService = reservacionService;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ObtenerReservaciones()
+        {
+            try
+            {
+                var reservaciones = await _reservacionService.ObtenerReservas();
+                return Ok(reservaciones);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { mensaje = ex.Message });
+            }
         }
 
         [HttpPost]
