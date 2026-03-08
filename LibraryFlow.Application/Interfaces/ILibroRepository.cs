@@ -12,5 +12,6 @@ namespace LibraryFlow.Application.Interfaces
         Task<List<Libro>> ObtenerTodosAsync();
         Task<Libro?> ObtenerPorIdAsync(int id);
         Task ActualizarLibroAsync(Libro libro);
+        Task AgregarLibroAsync(Libro libro);
     }
 }

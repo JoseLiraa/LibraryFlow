@@ -30,5 +30,19 @@ namespace LibraryFlow.API.Controllers
                 return BadRequest(new { mensaje = ex.Message });
             }
         }
+
+        [HttpPost]
+        public async Task<IActionResult> CrearLibro([FromBody] CrearLibroDto dto)
+        {
+            try
+            {
+                await _libroService.CrearLibro(dto);
+                return Ok(new { mensaje = "Libro creado correctamente" });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { mensaje = ex.Message });
+            }
+        }
     }
 }

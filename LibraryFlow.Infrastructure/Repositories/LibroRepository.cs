@@ -34,5 +34,11 @@ namespace LibraryFlow.Infrastructure.Repositories
             _context.Libros.Update(libro);
             await _context.SaveChangesAsync();
         }
+
+        public async Task AgregarLibroAsync(Libro libro)
+        {
+            await _context.Libros.AddAsync(libro);
+            await _context.SaveChangesAsync();
+        }
     }
  }

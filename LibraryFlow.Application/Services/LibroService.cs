@@ -29,6 +29,20 @@ namespace LibraryFlow.Application.Services
                 Autor = x.Autor,
                 Stock = x.StockDisponible
             }).ToList();
-        }        
+        }
+
+        public async Task CrearLibro(CrearLibroDto dto)
+        {
+            if (dto.Stock < 0) throw new Exception("El stock no puede ser negativo.");
+
+            var nuevoLibro = new Libro
+            {
+                Titulo = dto.Titulo,
+                Autor = dto.Autor,
+                StockDisponible = dto.Stock
+            };
+
+            await _libroRepository.AgregarLibroAsync(nuevoLibro);
+        }
     }
 }
