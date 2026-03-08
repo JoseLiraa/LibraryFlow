@@ -40,5 +40,18 @@ namespace LibraryFlow.Application.Services
             await _reservacionRepository.CrearReservacionAsync(reservacion);
             await _libroRepository.ActualizarLibroAsync(libro);
         }
+
+        public async Task<List<ReservacionDto>> ObtenerReservas()
+        {
+            var reservas = await _reservacionRepository.ObtenerTodosAsync();
+
+            return reservas.Select(x => new ReservacionDto
+            {
+                Id = x.Id,
+                NombreUsuario = x.NombreUsuario,
+                TituloLibro = x.Libro.Titulo,
+                FechaReservacion = x.FechaReservacion
+            }).ToList();
+        }
     }
 }
