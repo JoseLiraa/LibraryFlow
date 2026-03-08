@@ -1,4 +1,7 @@
+using LibraryFlow.Application.Interfaces;
+using LibraryFlow.Application.Services;
 using LibraryFlow.Infrastructure.Data;
+using LibraryFlow.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace LibraryFlow.API
@@ -13,6 +16,12 @@ namespace LibraryFlow.API
 
             builder.Services.AddDbContext<LibraryDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            builder.Services.AddScoped<ILibroRepository, LibroRepository>();
+            builder.Services.AddScoped<LibroService>();
+
+            builder.Services.AddScoped<IReservacionRepository, ReservacionRepository>();
+            builder.Services.AddScoped<ReservacionService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
