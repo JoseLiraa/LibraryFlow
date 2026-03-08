@@ -37,7 +37,7 @@ namespace LibraryFlow.API.Controllers
             try
             {
                 await _libroService.CrearLibro(dto);
-                return Ok(new { mensaje = "Libro creado correctamente" });
+                return Ok("Libro creado correctamente");
             }
             catch (Exception ex)
             {
