@@ -34,7 +34,7 @@ namespace LibraryFlow.Application.Services
             {
                 IdLibro = idLibro,
                 NombreUsuario = nombreUsuario,
-                FechaReservacion = DateTime.UtcNow
+                FechaReservacion = DateTime.Now
             };
 
             await _reservacionRepository.CrearReservacionAsync(reservacion);

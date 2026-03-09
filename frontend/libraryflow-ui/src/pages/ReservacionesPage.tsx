@@ -1,5 +1,5 @@
 import { useReservaciones } from "../hooks/useReservaciones"
-import { LibroIcon } from "../components/LibroCard/LibroIcon"
+import { UsuarioIcon } from "../components/LibroCard/UsuarioIcon"
 
 const ReservacionesPage = () => {
  
@@ -30,7 +30,7 @@ const ReservacionesPage = () => {
               <div className="flex items-center gap-4">
                 
                 <div className="w-12 h-12 bg-[#1a1a1a] rounded-xl flex items-center justify-center text-white transition-transform group-hover:scale-110">
-                  <LibroIcon className="w-6 h-6 text-white" />
+                  <UsuarioIcon className="w-6 h-6 text-white" />
                 </div>
                 
                 <div>
