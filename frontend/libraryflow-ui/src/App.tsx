@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 import LibrosPage from "./pages/LibrosPage"
+import ReservacionesPage from "./pages/ReservacionesPage"
 import Navbar from "./components/Navbar/Navbar"
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <main className="grow">
         <Routes>
         <Route path="/" element={<LibrosPage />} />
+        <Route path="/reservaciones" element={<ReservacionesPage />} />
       </Routes>
       </main>
     </div>
