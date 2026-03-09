@@ -1,9 +1,12 @@
+import { Routes, Route } from "react-router-dom"
+import LibrosPage from "./pages/LibrosPage"
+
 function App() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-lime-900">
-      <h1 className="text-4xl font-bold text-white">
-        LibraryFlow 🚀
-      </h1>
+    <div className="min-h-screen bg-gray-100">
+      <Routes>
+        <Route path="/" element={<LibrosPage />} />
+      </Routes>
     </div>
   )
 }
