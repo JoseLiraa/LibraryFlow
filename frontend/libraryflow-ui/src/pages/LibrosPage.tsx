@@ -1,5 +1,5 @@
 import { useLibros } from "../hooks/useLibros"
-import LibroCard from "../components/LibroCard"
+import LibroCard from "../components/LibroCard/LibroCard"
 import { crearReservacion } from "../services/reservacionService"
 
 const LibrosPage = () => {
