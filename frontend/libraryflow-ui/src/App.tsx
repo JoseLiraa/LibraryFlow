@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom"
 import LibrosPage from "./pages/LibrosPage"
 import ReservacionesPage from "./pages/ReservacionesPage"
+import NuevoLibroPage from "./pages/NuevoLibro/NuevoLibroPage"
 import Navbar from "./components/Navbar/Navbar"
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Routes>
         <Route path="/" element={<LibrosPage />} />
         <Route path="/reservaciones" element={<ReservacionesPage />} />
+        <Route path="/agregar-libro" element={<NuevoLibroPage />} />
       </Routes>
       </main>
     </div>

@@ -1,5 +1,5 @@
 import { Libro } from "../../interfaces/Libro"
-import { LibroIcon } from "./LibroIcon"
+import { LibroIcon } from "../icons/LibroIcon"
 import { getLibroStyles } from "./LibroCard.styles"
 
 interface LibroCardProps {

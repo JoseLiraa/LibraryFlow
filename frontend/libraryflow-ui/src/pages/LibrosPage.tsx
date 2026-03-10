@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useLibros } from "../hooks/useLibros"
 import LibroCard from "../components/LibroCard/LibroCard"
-import { ReservarModal } from "../components/LibroCard/ReservarModal"
+import { ReservarModal } from "../components/modals/ReservarModal"
 import { crearReservacion } from "../services/reservacionService"
 import { Libro } from "../interfaces/Libro"
 

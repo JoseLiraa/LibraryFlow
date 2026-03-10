@@ -1,5 +1,5 @@
 import { useReservaciones } from "../hooks/useReservaciones"
-import { UsuarioIcon } from "../components/LibroCard/UsuarioIcon"
+import { UsuarioIcon } from "../components/icons/UsuarioIcon"
 
 const ReservacionesPage = () => {
  

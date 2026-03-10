@@ -1,6 +1,6 @@
-import { useState } from "react"; // Ya no necesitas useEffect
+import { useState } from "react"; 
 import { ReservarModalProps } from "../../interfaces/ReservarModal";
-import { UsuarioIcon } from "./UsuarioIcon";
+import { UsuarioIcon } from "../icons/UsuarioIcon";
 
 export const ReservarModal = ({ 
   libroTitulo, 
