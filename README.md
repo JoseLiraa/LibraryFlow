@@ -103,16 +103,17 @@ GET /api/reservations
 
 ### Catálogo de libros
 
-![Catalogo](https://github.com/JoseLiraa/LibraryFlow/screenshots/1.PNG)
+![Catalogo](https://github.com/JoseLiraa/LibraryFlow/blob/master/screenshots/1.PNG)
+
 
 ### Agregar libro
 
-![Agregar libro](https://github.com/JoseLiraa/LibraryFlow/screenshots/4.PNG)
+![Agregar libro](https://github.com/JoseLiraa/LibraryFlow/blob/master/screenshots/4.PNG)
 
 ### Ver Reservaciones
 
-![Reservaciones](https://github.com/JoseLiraa/LibraryFlow/screenshots/3.PNG)
+![Reservaciones](https://github.com/JoseLiraa/LibraryFlow/blob/master/screenshots/3.PNG)
 
 ### Agregar Reservaciones
 
-![Reservaciones](https://github.com/JoseLiraa/LibraryFlow/screenshots/2.PNG)
+![Reservaciones](https://github.com/JoseLiraa/LibraryFlow/blob/master/screenshots/2.PNG)
