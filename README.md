@@ -35,7 +35,7 @@ Este proyecto está compuesto por:
 
 ```bash
 git clone https://github.com/tuusuario/libraryflow.git
-cd libraryflow/backend
+cd libraryflow/backend/LibraryFlow.API
 ```
 # 🖥 Backend (.NET API)
 ## Configurar base de datos
