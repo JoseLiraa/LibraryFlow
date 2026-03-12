@@ -4,6 +4,7 @@ import LibroCard from "../components/LibroCard/LibroCard"
 import { ReservarModal } from "../components/modals/ReservarModal"
 import { crearReservacion } from "../services/reservacionService"
 import { Libro } from "../interfaces/Libro"
+import { toast } from 'sonner'
 
 const LibrosPage = () => {
   const { libros, cargarLibros } = useLibros()
@@ -21,9 +22,10 @@ const LibrosPage = () => {
         nombreUsuario: nombreUsuario
       })
       await cargarLibros()
+      toast.success(`¡Reserva exitosa! "${libroSeleccionado.titulo}" ha sido apartado.`)
       setLibroSeleccionado(null) 
     } catch {
-      alert("Error: No se pudo realizar la reserva. Verifique disponibilidad.")
+      toast.error("No se pudo realizar la reserva. Verifique disponibilidad.")
     } finally {
       setProcesando(false)
     }

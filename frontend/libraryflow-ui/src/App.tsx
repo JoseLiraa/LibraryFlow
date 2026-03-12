@@ -3,10 +3,12 @@ import LibrosPage from "./pages/LibrosPage"
 import ReservacionesPage from "./pages/ReservacionesPage"
 import NuevoLibroPage from "./pages/NuevoLibro/NuevoLibroPage"
 import Navbar from "./components/Navbar/Navbar"
+import { Toaster } from 'sonner'
 
 function App() {
   return (
     <div className="min-h-screen bg-[#fafafa] flex flex-col font-sans">
+      <Toaster position="top-right" richColors />
       <Navbar />
       <main className="grow">
         <Routes>

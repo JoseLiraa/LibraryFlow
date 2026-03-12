@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { guardarLibro } from "../services/libroService";
 import { CrearLibroDto } from "../interfaces/Libro";
+import { toast } from 'sonner'
+
 
 export const useNuevoLibro = () => {
   const navegar = useNavigate();
@@ -28,10 +30,12 @@ export const useNuevoLibro = () => {
     setProcesando(true);
     try {
       await guardarLibro(formulario);
+      toast.success("Libro guardado exitosamente!")
+
       navegar("/");
     } catch (error) {
       console.error("Error al crear libro:", error);
-      alert("Hubo un problema al registrar el libro.");
+      toast.error("Hubo un problema al registrar el libro.")
     } finally {
       setProcesando(false);
     }
